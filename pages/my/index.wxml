@@ -1,0 +1,5 @@
+<include src="../index/index.wxml" />
+<view>哈哈哈哈</view>
+<import src='../index/index.wxml'/>
+<template is='pxmtest' data='{{from:"测试页面的"}}'/>
+<view catchtap='clickMe'>跳转到二级页面</view>

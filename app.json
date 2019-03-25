@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/list/index",
+    "pages/my/info",
+    "pages/index/index",
+    
+    "pages/my/index"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black"
+  },
+  "navigateToMiniProgramAppIdList":[],
+    "tabBar": {
+      "backgroundColor":"#eee",
+      "selectedColor":"#FF00FF",
+      "color":"#000",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath":"./img/cat.jpg",
+          "selectedIconPath":"./img/12.jpg"
+        },
+        {
+          "pagePath": "pages/my/index",
+          "text": "我",
+          "iconPath": "./img/cat.jpg",
+          "selectedIconPath": "./img/12.jpg"
+        }
+      ]
+    }
+}

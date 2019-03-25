@@ -1,0 +1,9 @@
+<template name='test'>
+<view  catchtap='clickMe'>这是彭彭彭的测试模板</view>
+</template>
+
+<template name='listTest'>
+  <view data-id='{{id}}' catchtap='clickMe'>
+  {{text}}
+  </view>
+</template>

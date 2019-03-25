@@ -1,0 +1,12 @@
+<view class="showPage">
+  <view id="showInfo">获取DOM：{{domInfo}}</view>
+  <view class='bar'></view>
+  <view>场景值信息：{{scene}}</view>
+    <view class='bar'></view>
+  <textarea placeholder='textarea测试输入问题'></textarea>
+  <view bindtap='goToList' data-value='outter'>测试冒泡，跳转到列表页<text catchtap='goDetail' style='font-size:20rpx; color:#f3f' data-value='inner'>详情</text></view>
+    <view class='bar'></view>
+  <view style='line-height:50px;'>内联样式</view>
+  <image src='../../img/cat.jpg'></image>
+  <button type='primary' catchtap='goTab'>到达tab页</button>
+</view>

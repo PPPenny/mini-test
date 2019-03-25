@@ -1,0 +1,9 @@
+.showPage{
+  padding: 10px;
+}
+  #showInfo{
+   word-wrap: break-word; 
+  }
+  .bar{
+    height: 10px;
+  }

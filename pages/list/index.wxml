@@ -1,0 +1,7 @@
+
+<import src='../../template/test.wxml'/>
+
+<view >
+<template is='listTest' wx:for='{{list}}'  wx:key='{{item.id}}' data='{{...item}}'/>
+<template is='test'/>
+</view>

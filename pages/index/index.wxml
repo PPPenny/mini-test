@@ -1,0 +1,25 @@
+<!--index.wxml-->
+
+<wxs module='module1'>
+ var msg='pxm';
+ module.exports.message=msg;
+</wxs>
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '../../img/cat.jpg'}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}{{module1.message}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>我是首页写死的</view> 
+  <template is='pxmtest' data='{{from:"首页"+userInfo.nickName}}'/>
+</view>
+
+<template name='pxmtest'>
+  我是{{from}}调用的测试模板
+</template>
